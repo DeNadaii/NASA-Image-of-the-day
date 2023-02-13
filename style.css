@@ -1,0 +1,20 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    border-radius: 25px
+}
+
+h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(206, 206, 224);
+}
