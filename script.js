@@ -1,4 +1,5 @@
-const APIurl = "https://api.nasa.gov/planetary/apod?api_key=6JeMl3RWmrTX9j1gTh5Mh0tWb8ZtGcOiisOWFTDH"
+const APIkey = "6JeMl3RWmrTX9j1gTh5Mh0tWb8ZtGcOiisOWFTDH"
+const APIurl = `https://api.nasa.gov/planetary/apod?api_key=${APIkey}` 
 
 const requisition = fetch(APIurl)
     .then(function(res){
@@ -12,6 +13,6 @@ const requisition = fetch(APIurl)
 
 function changeImage(imageURL,title,description){
     document.getElementById("image").src = imageURL
-    document.getElementById("imageTitle").innerHTML = title
+    document.getElementById("imageTitle").innerHTML = `The image of the day is: ${title}`
     document.getElementById("description").innerHTML = description
 }
