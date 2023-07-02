@@ -16,12 +16,19 @@ function changeImage(contentURL,title,description,media_type){
     if(type != "video"){
         let img = document.createElement("img")
         img.id = "image"
+        img.src = contentURL
+        img.alt = "Image of the day"
+        img.style.maxWidth = "100%";
+        img.style.height = "auto";
+        document.getElementById("article_img").innerHTML = "";
         document.getElementById("article_img").appendChild(img)    
-        img.src = contentURL    
+         
     }else{
         let video = document.createElement("iframe")
         video.id = "video"
         video.src = contentURL
+        document.getElementById("article_img").innerHTML = "";
+        document.getElementById("article_video").innerHTML = "";
         document.getElementById("article_video").appendChild(video)
     }
     

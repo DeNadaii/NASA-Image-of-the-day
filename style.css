@@ -1,54 +1,57 @@
-div {
-    display: flex;
-    justify-content: center;
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url("image/space.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+/* Estilos para o logotipo da NASA */
 img {
-    display: flex;
-    justify-content: center;
-    border-radius: 25px
+    display: block;
+    margin: 0 auto;
 }
 
-h1 {
-    display: flex;
+/* Estilos para o contêiner principal do artigo */
+#main_article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o título do artigo */
+.article_title h1 {
+    font-size: 24px;
     text-align: center;
-    justify-content: center;
+    margin: 10px 0;
 }
 
-.main_article{
-    display: flex;
-    flex-direction: column;
-    border-radius: 25px;
-    background: rgba(218, 226, 255, 0.85);
-    width: fit-content;
+/* Estilos para a imagem do artigo */
+.article_img {
+    text-align: center;
+    margin: 20px 0;
 }
 
-.article_img{
-
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+/* Estilos para o vídeo do artigo */
+.article_video {
+    text-align: center;
+    margin: 20px 0;
 }
 
-.article_description{
-    margin: auto;
-    width: 75%;
-}
-
-.article_video{
-    width: 75%;
-    height: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.video{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+/* Estilos para a descrição do artigo */
+.article_description p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 body {
-    background-image: url("image/space.png"); 
+    background-image: url("image/space.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
