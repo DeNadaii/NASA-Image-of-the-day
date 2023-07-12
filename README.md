@@ -13,7 +13,6 @@ To obtain your own NASA API Key, follow the steps below:
 1. Go to the [NASA Open API website](https://api.nasa.gov/).
 2. Click on "Generate API Key".
 3. Fill out the form and register to obtain your key.
-4. Replace the `APIkey` constant in the `script.js` file with your own key.
 
 ## Resources
 
