@@ -9,7 +9,7 @@ async function getResponse() {
     }
 
     const resAsJson = await response.json();
-    console.log(response.json())
+    console.log(resAsJson)
     changeImage(resAsJson.url, resAsJson.title, resAsJson.explanation, resAsJson.media_type)
 }
 
